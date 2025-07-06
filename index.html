@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,16 +26,65 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  
 
-  <!-- =======================================================
-  * Template Name: Navsons
-  * Template URL: https://bootstrapmade.com/navsons-bootstrap-business-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+  .letter-animation {
+    font-family: 'Tangerine', cursive;
+    font-size: 38px;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+    white-space: pre-wrap; /* keep spacing */
+  }
+
+  .letter-animation span {
+    display: inline-block;
+    opacity: 0;
+    animation: slideIn 0.6s forwards;
+  }
+
+  .letter-animation span:nth-child(odd) {
+    animation-name: slideFromLeft;
+  }
+
+  .letter-animation span:nth-child(even) {
+    animation-name: slideFromRight;
+  }
+
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .letter-animation span {
+    animation-delay: calc(var(--i) * 0.04s);
+  }
+  </style>
+
+
 </head>
 
 <body class="index-page">
@@ -43,15 +94,18 @@
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:navsonsgroup@gmail.com">navsonsgroup@gmail.com</a></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a
+              href="mailto:navsonsgroup@gmail.com">navsonsgroup@gmail.com</a></i>
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>+92 300 0055563</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
-            <a href="https://x.com/NavsonsGroup" class="text-white"><i class="bi bi-twitter-x text-white"></i></a>
-            <a href="https://www.facebook.com/people/Navsons-Group/61569995770591/" class="text-white"><i class="bi bi-facebook text-white"></i></a>
-            <!-- <a href="" class="text-white"><i class="bi bi-instagram text-white"></i></a>
+          <a href="https://x.com/NavsonsGroup" class="text-white"><i class="bi bi-twitter-x text-white"></i></a>
+          <a href="https://www.facebook.com/people/Navsons-Group/61569995770591/" class="text-white"><i
+              class="bi bi-facebook text-white"></i></a>
+          <!-- <a href="" class="text-white"><i class="bi bi-instagram text-white"></i></a>
             <a href="" class="text-white"><i class="bi bi-linkedin text-white"></i></a> -->
-            <a href="https://www.youtube.com/@navsonsgroup" class="text-white"><i class="bi bi-youtube text-white"></i></a>
+          <a href="https://www.youtube.com/@navsonsgroup" class="text-white"><i
+              class="bi bi-youtube text-white"></i></a>
         </div>
       </div>
     </div><!-- End Top Bar -->
@@ -109,10 +163,10 @@
         <div class="row gy-4">
           <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
             <h1 style="color: #000;">Welcome to <br>
-          <img height="50px" class="mr-2" src="removed-b-1.png" alt="">
-          <img height="50px" src="removed-bg-2.png" alt=""></h1>
-            <p style="color: rgb(82, 82, 82); border-bottom: 1px solid #050042; padding: 10px">Driven by Service. Powered by Care. Styled for Life.</p>
-            <div class="d-flex">
+              <img height="50px" class="mr-2" src="removed-b-1.png" alt="">
+              <img height="50px" src="removed-bg-2.png" alt="">
+            </h1>
+              <h2 class="letter-animation mt-4" id="animated-text"></h2>
               <!-- <a href="#about" class="btn-get-started">Get Started</a> -->
               <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
             </div>
@@ -147,18 +201,6 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100" style="cursor: not-allowed;">
-            <div class="service-item position-relative" style="cursor: not-allowed;">
-              <div class="icon" style="cursor: not-allowed;">
-                <i class="bi bi-activity" style="cursor: not-allowed;"></i>
-              </div>
-              <a href="#services" class="stretched-link" style="cursor: not-allowed;">
-                <h3>Pharmaceutical</h3>
-              </a>
-              <p>Coming Soon...</p>
-            </div>
-          </div><!-- End Service Item -->
-
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
@@ -168,6 +210,18 @@
                 <h3>Automobile Services</h3>
               </a>
               <p>Car Wash | Detailing | Services</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100" style="cursor: not-allowed;">
+            <div class="service-item position-relative" style="cursor: not-allowed;">
+              <div class="icon" style="cursor: not-allowed;">
+                <i class="bi bi-activity" style="cursor: not-allowed;"></i>
+              </div>
+              <a href="#services" class="stretched-link" style="cursor: not-allowed;">
+                <h3>Pharmaceutical</h3>
+              </a>
+              <p>Coming Soon...</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -195,14 +249,15 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color: #050042;">Contact</h2>
-        <p><span style="color: #050042;">Need Help?</span> <span class="description-title" style="color: #050042;">Contact Us</span></p>
+        <p><span style="color: #050042;">Need Help?</span> <span class="description-title"
+            style="color: #050042;">Contact Us</span></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
-          <div class="col-lg-5">
+          <!-- <div class="col-lg-5">
 
             <div class="info-wrap">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -212,7 +267,7 @@
                   <p>Phase 4C-2, Street 08</p>
                   <p>Ghouri Town, Islamabad, 44000</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
@@ -220,7 +275,7 @@
                   <h3>Call Us</h3>
                   <p>+92 300 0055563</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
@@ -228,18 +283,25 @@
                   <h3>Email Us</h3>
                   <p>navsonsgroup@gmail.com</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.5372842825495!2d73.1509339751581!3d33.62263664029353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4abb3e8596fbd337%3A0xe5becb0ece88baa7!2sNavsons%20Group!5e1!3m2!1sen!2s!4v1751668121093!5m2!1sen!2s" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-link flex-shrink-0"></i>
+                <div>
+                  <h3>Follow Us</h3>
+                  <a class="" href="https://x.com/NavsonsGroup">Twitter</a>
+                  <br>
+                  <a class="" href="https://www.facebook.com/people/Navsons-Group/61569995770591">Facebook</a>
+                  <br>
+                  <a class="" href="https://www.youtube.com/@navsonsgroup">YouTube</a>
+                </div>
+              </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -259,7 +321,7 @@
 
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="5" id="message-field" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -273,6 +335,14 @@
               </div>
             </form>
           </div><!-- End Contact Form -->
+          <div class="col-lg-7">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.5372842825495!2d73.1509339751581!3d33.62263664029353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4abb3e8596fbd337%3A0xe5becb0ece88baa7!2sNavsons%20Group!5e1!3m2!1sen!2s!4v1751668121093!5m2!1sen!2s"
+                width="100%" height="500px" style="border: 3px solid #050042" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
 
         </div>
 
@@ -286,18 +356,36 @@
 
     <div class="footer-newsletter" style="background-color: #060049;">
       <div class="container">
-        <div class="row justify-content-center text-center">
+        <div class="row text-center">
           <div class="col-lg-6">
-            <h4 class="text-white">Join Our Newsletter</h4>
-            <p class="text-white">Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form text-white"><input type="email" name="email">
-                <button class="text-white btn btn-primary">Subscribe</button>
-              </div>
-              <div class="loading text-white">Loading</div>
+            <a href="index.html" class="d-flex align-items-center mt-4">
+              <span class="sitename text-white">
+                <div class="d-flex align-items-cente">
+                  <div>
+                    <img height="80px" src="white-logo-nsg.png">
+                    <br>
+                  </div>
+                  <div class="ms-2 mt-2 d-block align-items-cente">
+                    <img height="30px" src="removed-b-1.png" style="filter: brightness(0) invert(1);" alt="">
+                    <br>
+                    <img height="30px" src="removed-bg-2.png" style="filter: brightness(0) invert(1);" alt="">
+                  </div>
+                </div>
+              </span>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <h6 class="text-white fw-bold">Join Our Newsletter</h6>
+            <!-- <p class="text-white">Subscribe to our newsletter and receive the latest news about our products and
+              services!</p> -->
+            <!-- <form method="post" class="php-email-form"> -->
+            <div class="newsletter-form text-white" style="border-radius: 0;">
+              <input disabled type="email" name="email" style="border-radius: 0;">
+              <button class="text-white btn btn-primary" style="border-radius: 50px;">Subscribe</button>
+            </div>
+              <!-- <div class="loading text-white">Loading</div>
               <div class="error-message text-white"></div>
-              <div class="sent-message text-white">Your subscription request has been sent. Thank you!</div>
-            </form>
+              <div class="sent-message text-white">Your subscription request has been sent. Thank you!</div> -->
           </div>
         </div>
       </div>
@@ -305,27 +393,43 @@
 
     <div class="container footer-top">
       <div class="row gy-4">
-        <div class="col-lg-6 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename text-white">
-              <div class="d-flex align-items-cente">
-                <div>
-                  <img height="100px" src="white-logo-nsg.png">
-                  <br>
-                </div>
-                <div class="ms-2 mt-2 d-block align-items-cente">
-                  <img height="30px" src="removed-b-1.png" style="filter: brightness(0) invert(1);" alt="">
-                  <br>
-                  <img height="30px" src="removed-bg-2.png" style="filter: brightness(0) invert(1);" alt="">
-                </div>
-              </div>
-            </span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p class="text-white">Phase 4C-2, Street 08</p>
+
+        <div class="col-lg-4 col-md-4 footer-about">
+          <h4 class="text-white text-decoration-underline">Contact</h4>
+          <div class="footer-contact">
+            <p class="text-white"><strong>Address:</strong> <br>Phase 4C-2, Street 08</p>
             <p class="text-white">Ghouri Town, Islamabad, 44000</p>
-            <p class="mt-3 text-white"><strong>Phone:</strong> <span>+92 300 0055563</span></p>
-            <p class="text-white"><strong>Email:</strong> <span>navsonsgroup@gmail.com</span></p>
+            <p class="mt-3 text-white"><strong>Phone:</strong> <br><span>+92 300 0055563</span><br><span>+92 303 5153881</span></p>
+            <p class="text-white"><strong>Email:</strong> <br><span>navsonsgroup@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 footer-links">
+          <h4 class="text-white text-decoration-underline">Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="https://tech.navsons.com" class="text-white">Information Technology</a>
+            </li>
+            <br>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="https://autoservices.navsons.com" class="text-white">Automobile Services</a>
+            </li>
+            <br>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white">Pharmaceutical</a></li>
+            <br>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white">Clothing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <h4 class="text-white text-decoration-underline">Follow Us</h4>
+          <p class="text-white">Updates, Insights & More — Straight from Us.</p>
+          <div class="social-links d-flex text-white">
+            <a href="https://x.com/NavsonsGroup" class="text-white"><i class="bi bi-twitter-x text-white"></i></a>
+            <a href="https://www.facebook.com/people/Navsons-Group/61569995770591/" class="text-white"><i
+                class="bi bi-facebook text-white"></i></a>
+            <!-- <a href="" class="text-white"><i class="bi bi-instagram text-white"></i></a>
+            <a href="" class="text-white"><i class="bi bi-linkedin text-white"></i></a> -->
+            <a href="https://www.youtube.com/@navsonsgroup" class="text-white"><i
+                class="bi bi-youtube text-white"></i></a>
           </div>
         </div>
 
@@ -339,33 +443,12 @@
           </ul>
         </div> -->
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4 class="text-white">Our Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white">Information Technology</a></li>
-            <li><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white">Automobile Services</a></li>
-            <li><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white">Pharmaceutical</a></li>
-            <li><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white">Clothing</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12">
-          <h4 class="text-white">Follow Us</h4>
-          <p class="text-white">Updates, Insights & More — Straight from Us.</p>
-          <div class="social-links d-flex text-white">
-            <a href="https://x.com/NavsonsGroup" class="text-white"><i class="bi bi-twitter-x text-white"></i></a>
-            <a href="https://www.facebook.com/people/Navsons-Group/61569995770591/" class="text-white"><i class="bi bi-facebook text-white"></i></a>
-            <!-- <a href="" class="text-white"><i class="bi bi-instagram text-white"></i></a>
-            <a href="" class="text-white"><i class="bi bi-linkedin text-white"></i></a> -->
-            <a href="https://www.youtube.com/@navsonsgroup" class="text-white"><i class="bi bi-youtube text-white"></i></a>
-          </div>
-        </div>
-
       </div>
     </div>
-
+    <hr>
     <div class="container copyright text-center mt-4">
-      <p class="text-white">© <span class="text-white">Copyright</span> <strong class="px-1 sitename text-white">Navsons Group</strong> <span class="text-white">All Rights Reserved</span></p>
+      <p class="text-white">© <span class="text-white">Copyright</span> <strong class="px-1 sitename text-white">Navsons
+          Group</strong> <span class="text-white">All Rights Reserved</span></p>
       <div class="credits">
       </div>
     </div>
@@ -373,7 +456,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader">
@@ -396,6 +480,17 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    const text = "Digitally born - Driven by Service - Powered by Care - Styled for Life";
+    const container = document.getElementById("animated-text");
+
+    [...text].forEach((char, index) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      span.style.setProperty('--i', index);
+      container.appendChild(span);
+    });
+  </script>
 
 </body>
 
